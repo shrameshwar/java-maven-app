@@ -27,11 +27,12 @@ kind: Service
 metadata:
   name: java-application-service
 spec:
-  type: LoadBalancer
   selector:
-    app: java-app
+    app: java-app      # Match labels used in your Deployment
   ports:
-  - name: java-service
-    protocol: TCP
-    port: 8080
-    targetPort: 8080
+    - name: http
+      protocol: TCP
+      port: 8080       # Port on the Service
+      targetPort: 8080 # Port on the container/pod
+  type: LoadBalancer      # Type of Service (ClusterIP is default)
+
