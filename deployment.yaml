@@ -5,6 +5,7 @@ metadata:
   labels:
     app: java-app
   name: java
+  namespace: shrameshwar
 spec:
   replicas: 1
   selector:
