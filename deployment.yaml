@@ -35,5 +35,5 @@ spec:
       protocol: TCP
       port: 8080       # Port on the Service
       targetPort: 8080 # Port on the container/pod
-  type: LoadBalancer      # Type of Service (ClusterIP is default)
+  type: NodePort      # Type of Service (ClusterIP is default)
 
