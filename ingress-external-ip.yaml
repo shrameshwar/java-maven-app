@@ -12,5 +12,5 @@ spec:
     service:
       name: java-application-service
       port:
-        number: 80 
+        number: 8080
     
