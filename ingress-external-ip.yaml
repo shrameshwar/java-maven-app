@@ -10,24 +10,7 @@ metadata:
 spec: 
   defaultBackend:
     service:
-      name: app3-nginx-nodeport-service
+      name: java-application-service
       port:
-        number: 80                            
-  rules:
-    - http:
-        paths:           
-          - path: /app1
-            pathType: Prefix
-            backend:
-              service:
-                name: app1-nginx-nodeport-service
-                port: 
-                  number: 80
-          - path: /app2
-            pathType: Prefix
-            backend:
-              service:
-                name: app2-nginx-nodeport-service
-                port: 
-                  number: 80
+        number: 80 
     
