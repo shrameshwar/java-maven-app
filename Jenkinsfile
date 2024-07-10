@@ -59,7 +59,7 @@ pipeline {
                 body: "The pipeline ${env.BUILD_URL} has successfully completed."
         }
         failure {
-            echo 'Pipeline failed!'
+            echo 'Pipeline failed!!'
             mail to: 'shrameshwar1999@gmail.com',
                 subject: "Pipeline Failed: ${currentBuild.fullDisplayName}",
                 body: "The pipeline ${env.BUILD_URL} has failed. Check the logs for details."
