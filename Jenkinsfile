@@ -32,7 +32,7 @@ pipeline {
         stage('Docker Image Creation') {
             steps {
                 // Define steps for the image build
-                echo 'Image building...'
+                echo 'Docker Image Creation...'
                 sh 'docker build -t asia-east1-docker.pkg.dev/charged-gravity-425405-j6/docker-image/java-application .'
             }
         }
